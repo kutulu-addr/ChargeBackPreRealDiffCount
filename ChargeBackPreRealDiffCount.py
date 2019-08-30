@@ -44,7 +44,7 @@ def GetGroupDataset(df, groupcol='', groupbycol=''): ##Use one column(groupcol) 
         resofgroup = df.groupby(by=[groupcol])[groupbycol].sum()
         return resofgroup
     
-excel_path = 'D:\\PersonalDoc\\PythonPrac\\ChargeBackDiffTracing\\exportdata.xlsx' ##输入excel文件所在路径
+excel_path = '.\\exportdata.xlsx' ##输入excel文件所在路径
 sheet_name = 'Data1' ##excel数据sheet名
 company_col = 'Company' ##excel中公司代码列
 claim_date_col='ClaimCreateTime' ##excel中时间列1
